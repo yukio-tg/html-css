@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Responsiva, Vídeos e Áudios</title>
+    <link href=""
+</head>
+<body>
+    <h1>Mídias em HTML</h1>
+    <h2>Imagens Responsivas</h2>
+    <p>Aumenta a diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/diabólico_azul_espiritual.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/Diabolico_laranja.png" type="image/png">
+        <source media="(max-width: 850px)" srcset="imagens/diabólico_verde.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens/diabólico_vermelho_espiritual.png" type="image/png">
+        <img src="imagens/diabólico_rosa_espiritual.png" alt="diabólicos">
+    </picture>
+    <h2>Áudios</h2>
+        <p>Áudios para tocar de formas diferentes.</p>
+        <audio preload="metadata" controls autoplay loop>
+            <source src="audios/Joel.mp3" type="audio/mpeg">
+            <p>Seu navegador não suporta esse formato de áudio.</p>
+        </audio>
+    <h2>Vídeos</h2>
+        <p>Vídeos para tocar de formas diferentes.</p>
+</body>
+</html>

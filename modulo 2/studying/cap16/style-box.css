@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+h1 {
+    background-color: lightyellow;
+    font: italic bold 30px Arial, Helvetia, sans-serif;
+    height: 100px;
+    width:1000px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: goldenrod;
+    margin-right: auto;
+    margin-left: auto;
+}

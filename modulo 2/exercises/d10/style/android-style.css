@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Danfo&family=UnifrakturCook:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+* {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --default-font: Arial, Verdana, Helvetica, sans-serif;
+    --highlighted-font: 'Bebas Neue', 'cursiva';
+    --android-font: 'Android', 'cursiva';
+}
+
+body {
+    background-color: var(--color0);
+    font-family: var(--default-font);
+}
+
+header {
+    background-color: var(--color1);
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--highlighted-font);
+}
+
+header > p{
+    color: white;
+}
+
+nav {
+    background-color:var(--color5)
+}
+
+main {
+    background-color: white;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--android-font);
+}
+
+main h2 {
+    font-family: var(--android-font)
+}
+
+footer{
+    background-color: var(--color5);
+}
+
+footer > p {
+    color: white;
+}
