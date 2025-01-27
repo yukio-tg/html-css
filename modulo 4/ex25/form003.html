@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(238, 238, 255);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form{
+            margin: 5px;
+            background-color: rgb(199, 194, 231);
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 1000px;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.26);
+        }
+
+        form p{
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        header{
+            padding: 20px;
+            margin: 0px;
+            background-color: black;
+            color:white;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bolder;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.233);
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <H1>MEU PRIMEIRO FORMULÁRIO</H1>
+    </header>
+        <form action="cadastro.php" autocomplete="off" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nnome" id="inome">
+        </p>
+        <p>
+            <label for="inota">Média:</label>
+            <input type="number" name="nnota" id="inota" min="0" max="10" placeholder="0 a 10" step="0.01" required>
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="nmes" id="imes" value="2020-07">
+        </p>
+        <p>
+            <label for="idata">Dia da Prova</label>
+            <input type="date" name="ndata" name="idata" value="2020-07-14">
+        </p>
+        <p>
+            <label for="ihorario">Horário da Avaliação</label>
+            <input type="time" name="nhorario" name="ihorario">
+        </p>
+        <p>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
