@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário Idade</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +25,7 @@
         form{
             position: absolute;
             left: 50%;
-            transform: translate(-50%, 0%);
+            transform: translate(-10%, 0%);
             width: 1000px;
         }
 
@@ -49,35 +49,31 @@
 </head>
 <body>
     <header>
-        <H1>MEU PRIMEIRO FORMULÁRIO</H1>
+        <H1>Formulários que Calcula idade</H1>
     </header>
         <article>
             <form action="cadastro.php" autocomplete="off" method="get">
                 <p>
-                    <label for="inome">Nome:</label>
-                    <input type="text" name="nnome" id="inome">
+                    <label for="iano">Em que ano você nasceu: </label>
+                    <input type="number" name="nano" id="iano" min="1900" max="2024" oninput="calcIdade()">
                 </p>
                 <p>
-                    <label for="inota">Média:</label>
-                    <input type="number" name="nnota" id="inota" min="0" max="10" placeholder="0 a 10" step="0.01" required>
+                    <label for="iidade">Você tem </label>
+                    <output id="iidade">0</output>
+                    <label for="iidade">anos de idade.</label>
                 </p>
                 <p>
-                    <label for="imes">Período Letivo</label>
-                    <input type="month" name="nmes" id="imes" value="2020-07">
-                </p>
-                <p>
-                    <label for="idata">Dia da Prova</label>
-                    <input type="date" name="ndata" name="idata" value="2020-07-14">
-                </p>
-                <p>
-                    <label for="ihorario">Horário da Avaliação</label>
-                    <input type="time" name="nhorario" name="ihorario">
-                </p>
-                <p>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
                 </p>
             </form>
         </article>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
 </body>
 </html>
