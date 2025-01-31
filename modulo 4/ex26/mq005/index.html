@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Notícias</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Tecnologias</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, facilis porro minima harum facere autem temporibus consequatur ut doloremque molestias earum a animi sunt eius, est dolores assumenda aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, numquam pariatur tempora sit velit voluptatem exercitationem illum ipsam nulla odit adipisci eligendi aliquam maxime sed quis et laboriosam neque unde.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, facilis porro minima harum facere autem temporibus consequatur ut doloremque molestias earum a animi sunt eius, est dolores assumenda aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, numquam pariatur tempora sit velit voluptatem exercitationem illum ipsam nulla odit adipisci eligendi aliquam maxime sed quis et laboriosam neque unde.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, facilis porro minima harum facere autem temporibus consequatur ut doloremque molestias earum a animi sunt eius, est dolores assumenda aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, numquam pariatur tempora sit velit voluptatem exercitationem illum ipsam nulla odit adipisci eligendi aliquam maxime sed quis et laboriosam neque unde.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, facilis porro minima harum facere autem temporibus consequatur ut doloremque molestias earum a animi sunt eius, est dolores assumenda aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, numquam pariatur tempora sit velit voluptatem exercitationem illum ipsam nulla odit adipisci eligendi aliquam maxime sed quis et laboriosam neque unde.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, facilis porro minima harum facere autem temporibus consequatur ut doloremque molestias earum a animi sunt eius, est dolores assumenda aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, numquam pariatur tempora sit velit voluptatem exercitationem illum ipsam nulla odit adipisci eligendi aliquam maxime sed quis et laboriosam neque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, facilis porro minima harum facere autem temporibus consequatur ut doloremque molestias earum a animi sunt eius, est dolores assumenda aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, numquam pariatur tempora sit velit voluptatem exercitationem illum ipsam nulla odit adipisci eligendi aliquam maxime sed quis et laboriosam neque unde.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
