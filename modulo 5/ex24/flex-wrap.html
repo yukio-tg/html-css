@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o flex-wrap</title>
+    <style>
+        div.container{
+            background-color: orange;
+            display: flex;
+            margin: 20px;
+            flex-direction: row;
+        }
+
+        div.item{
+            background-color: skyblue;
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            
+            align-items: center;
+            text-align: center;
+        }
+        
+        div.no-wrap > div.container{
+            flex-wrap: nowrap;
+        }
+
+        div.wrap > div.container{
+            flex-wrap: wrap;
+        }
+
+        div.wrap-reverse > div.container{
+            flex-wrap: wrap-reverse;
+        }
+
+        div.flex-auto > div.container{
+            flex-wrap: wrap;
+        }
+
+        div.flex-auto > div.container > div.item{
+            background-color: rgb(190, 74, 74);
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="no-wrap">
+        <div class="container">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+        </div>
+    </div>
+    <div class="wrap-reverse">
+        <div class="container">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+        </div>
+    </div>
+    <div class="flex-auto">
+        <div class="container">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+        </div>
+    </div>
+</body>
+</html>
